@@ -1,0 +1,20 @@
+:root {
+  /* colors */
+  --text-color: #000;
+  --text-color-white: #fff;
+  --footer-links: #00000099;
+  --text-color-light: #333;
+  --secondary-text: #999999;
+  --red-text: #ff3333;
+  --rating-stars: #ffc633;
+
+  /* bg colors*/
+  --bg-primary: #fff;
+  --bg-secondary: #f0f0f0;
+  --bg-hero: #f2f0f1;
+  --bg-card: #f0eeed;
+  --bg-black: #000;
+  --bg-light-gray: #d0d0d0;
+  --bg-transparent: transparent;
+  --discount-bedge: #ffebeb;
+}

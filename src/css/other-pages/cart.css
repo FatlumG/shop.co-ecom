@@ -1,0 +1,268 @@
+/* Import CSS Variables */
+@import "../variables.css";
+
+/* Import CSS Reset */
+@import "../reset.css";
+
+/* Import CSS Main */
+@import "../main.css";
+
+/* Import CSS Main */
+@import "../responsive.css";
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 100px;
+  margin-bottom: 200px;
+}
+
+main .cart-part {
+  width: 100%;
+  margin: 40px 0;
+}
+
+main .cart-part h2 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.cart-products {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10px;
+}
+
+.cart-products .choose-product {
+  width: 60%;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid var(--bg-card);
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 10px 0 10px;
+}
+.choose-product .product-general {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--bg-card);
+}
+
+.product-general .product-description {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.product-general .product-img {
+  /* height: auto; */
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  border-radius: 10px;
+  background-color: var(--bg-card);
+}
+.product-general .product-img img {
+  border-radius: 10px;
+  height: 200px;
+}
+
+.product-general .product-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+.product-general .product-text h6 {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.product-general .product-text p {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.product-general .product-text h5 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.product-general .product-nr {
+  width: auto;
+  height: 226px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.product-general .product-nr span {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.product-nr span p {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-nr span button {
+  font-size: 25px;
+  width: 30%;
+  height: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.product-general .product-nr img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.cart-products .order-product {
+  width: 40%;
+  height: 80vh;
+  align-self: self-start;
+  border-radius: 20px;
+  border: 2px solid var(--bg-card);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+}
+.order-product .sum-part {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+}
+
+.sum-part .summing {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.sum-part .summing h6 {
+  font-size: 15px;
+  color: var(--secondary-text);
+  font-weight: 100;
+}
+
+.sum-part .discount p {
+  color: var(--red-text);
+}
+
+.sum-part .delivery {
+  border-bottom: 2px solid var(--bg-card);
+  height: 35px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.total h6 {
+  font-size: 15px;
+  color: var(--text-color);
+  font-weight: 100;
+}
+
+.total p {
+  font-size: 20px;
+}
+
+.apply {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.apply input {
+  width: 70%;
+  height: 50px;
+  background-color: var(--bg-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  border-radius: 30px;
+  border: none;
+  padding: 20px;
+}
+
+.apply button {
+  width: 28%;
+  height: 50px;
+  background-color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: none;
+  color: var(--bg-primary);
+}
+
+.check {
+  width: 100%;
+  height: 50px;
+}
+
+.check button {
+  width: 100%;
+  height: 50px;
+  background-color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  color: var(--bg-primary);
+  border: none;
+}
+
+.check button i {
+  margin-left: 10px;
+}

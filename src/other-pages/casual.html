@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop.Co | Casual Page</title>
+    <link rel="icon" href="../assets/images/icons/favorite-icon.png" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/other-pages/casual.css" />
+    <link
+      rel="stylesheet"
+      href="../css/other-pages/other-pages-responsive.css"
+    />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="loader-parent">
+      <div class="loader"></div>
+    </div>
+    <div id="signUp">
+      <div class="signUp-text">
+        <p>Sign up and get 20% off to your first order.</p>
+        <a href="">Sign Up Now</a>
+      </div>
+      <div class="signUp-remove">
+        <button id="removeSignbtn" type="button">&times;</button>
+      </div>
+    </div>
+    <!-- HEADER  -->
+    <header class="header">
+      <div class="bars-title">
+        <img id="bars" src="../assets/images/icons/bars.svg" alt="Bars Icon" />
+        <h1>Shop.co</h1>
+      </div>
+      <div class="sidebar-nav">
+        <ul class="sidebar-items">
+          <li class="sidebar-item">
+            <i id="xmark" class="fa-solid fa-xmark"></i>
+          </li>
+          <li class="sidebar-item"><a href="../../index.html">Shop</a></li>
+          <li class="sidebar-item"><a href="../../index.html">Brands</a></li>
+          <li class="sidebar-item">
+            <a href="../../index.html">New Arrivals</a>
+          </li>
+          <li class="sidebar-item"><a href="../../index.html">On Sale</a></li>
+        </ul>
+      </div>
+      <ul class="nav-menu">
+        <li class="dropdown">
+          <button class="dropdown-toggle" type="button">
+            Shop <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">
+              <a href="./src/other-pages/casual.html">Men's Clothing</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="./src/other-pages/casual.html">Women's Clothing</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="./src/other-pages/casual.html">Accessories</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="./src/other-pages/casual.html">Shoes</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="../../index.html">Brands</a></li>
+        <li><a href="../../index.html">New Arrivals</a></li>
+        <li><a href="../../index.html">On Sale</a></li>
+      </ul>
+      <div class="search-box">
+        <div class="search-bar">
+          <button id="searchBtn">
+            <i class="fa-solid fa-magnifying-glass"> </i>
+          </button>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for products..."
+          />
+        </div>
+        <div class="result-box"></div>
+      </div>
+      <div class="cart-user-container">
+        <img
+          id="search-icon"
+          src="../assets/images/icons/search-icon.svg"
+          alt="Search Icon"
+        />
+        <a href="./cart.html">
+          <img
+            src="../assets/images/icons/shoppingCart.svg"
+            alt="Shopping Cart"
+        /></a>
+        <img src="../assets/images/icons/userLogo.svg" alt="User Logo" />
+      </div>
+    </header>
+    <!-- HEADER - END -->
+    <!-- ============================================================================ -->
+
+    <main class="casual-container">
+      <aside id="filterBox" class="sidebar custom-scrollbar">
+        <!-- Filters Section -->
+        <div class="filters">
+          <div class="title">
+            <h3>Filters</h3>
+            <img
+              src="../assets/images/icons/filter-frame.svg"
+              alt="Filter Frame"
+              id="filter-btn"
+            />
+          </div>
+          <!-- Categories Filter -->
+          <div class="filter-section">
+            <div class="filter-line"></div>
+            <ul class="filter-list">
+              <li>
+                <label>T-shirts</label>
+                <img
+                  src="../assets/images/icons/filter-arrow.svg"
+                  alt="Filter Arrow"
+                />
+              </li>
+              <li>
+                <label>Shorts</label>
+                <img
+                  src="../assets/images/icons/filter-arrow.svg"
+                  alt="Filter Arrow"
+                />
+              </li>
+              <li>
+                <label>Shirts</label>
+                <img
+                  src="../assets/images/icons/filter-arrow.svg"
+                  alt="Filter Arrow"
+                />
+              </li>
+              <li>
+                <label>Hoodie</label>
+                <img
+                  src="../assets/images/icons/filter-arrow.svg"
+                  alt="Filter Arrow"
+                />
+              </li>
+              <li>
+                <label>Jeans</label>
+                <img
+                  src="../assets/images/icons/filter-arrow.svg"
+                  alt="Filter Arrow"
+                />
+              </li>
+            </ul>
+            <div class="filter-line"></div>
+          </div>
+
+          <!-- Price Filter -->
+          <div class="filter-section">
+            <h4>Price</h4>
+            <div class="price-range">
+              <div class="wrap">
+                <div class="track">
+                  <div class="track-line"></div>
+                </div>
+                <div class="thumb thumb-a"></div>
+                <div class="thumb thumb-b"></div>
+              </div>
+              <span class="range-price">
+                <div class="small-price">$50</div>
+                <div class="big-price">$200</div>
+              </span>
+            </div>
+            <div class="filter-line"></div>
+          </div>
+
+          <!-- Colors Filter -->
+          <div class="filter-section">
+            <h4>Colors</h4>
+            <div class="colors">
+              <span
+                class="color-circle"
+                style="background-color: #008000"
+              ></span>
+              <span
+                class="color-circle"
+                style="background-color: #ff0000"
+              ></span>
+              <span
+                class="color-circle"
+                style="background-color: #0000ff"
+              ></span>
+              <span
+                class="color-circle"
+                style="background-color: #ffff00"
+              ></span>
+              <span
+                class="color-circle"
+                style="background-color: #ff8c00"
+              ></span>
+              <span
+                class="color-circle"
+                style="background-color: #ff69b4"
+              ></span>
+              <span
+                class="color-circle"
+                style="background-color: #ffffff; border: 1px solid #000"
+              ></span>
+              <span
+                class="color-circle"
+                style="background-color: #000000"
+              ></span>
+            </div>
+            <div class="filter-line"></div>
+          </div>
+
+          <!-- Size Filter -->
+          <div id="filterBox" class="filter-section">
+            <h4>Size</h4>
+            <div class="sizes">
+              <button class="size">XX-Small</button>
+              <button class="size">X-Small</button>
+              <button class="size">Small</button>
+              <button class="size">Medium</button>
+              <button class="size">Large</button>
+              <button class="size">X-Large</button>
+              <button class="size">XX-Large</button>
+            </div>
+            <div class="filter-line"></div>
+          </div>
+
+          <!-- Dress Style Filter -->
+          <div class="filter-section">
+            <h4>Dress Style</h4>
+            <ul class="filter-list">
+              <li>
+                <label>Casual</label>
+                <img
+                  src="../assets/images/icons/filter-arrow.svg"
+                  alt="Filter Arrow"
+                />
+              </li>
+              <li>
+                <label>Formal</label>
+                <img
+                  src="../assets/images/icons/filter-arrow.svg"
+                  alt="Filter Arrow"
+                />
+              </li>
+              <li>
+                <label>Party</label>
+                <img
+                  src="../assets/images/icons/filter-arrow.svg"
+                  alt="Filter Arrow"
+                />
+              </li>
+              <li>
+                <label>Gym</label>
+                <img
+                  src="../assets/images/icons/filter-arrow.svg"
+                  alt="Filter Arrow"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <!-- Apply Filter Button -->
+          <div class="apply-filter">
+            <button class="apply-button">Apply Filter</button>
+          </div>
+        </div>
+      </aside>
+
+      <div class="cards-content">
+        <h1>Casual</h1>
+        <div class="arrival-cards-container">
+          <div class="arrivalCard">
+            <div class="arrivalProduct">
+              <a href="./product-page.html">
+                <img
+                  src="../assets/images/products/graphic-tshirt.png"
+                  alt="Orange T-Shirt"
+                />
+              </a>
+            </div>
+            <div class="arrivalProductDescription">
+              <p>Graphic Orange T-shirt</p>
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+              <div class="cost">
+                <h6>$145</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="arrivalCard">
+            <div class="arrivalProduct">
+              <a href="./product-page.html">
+                <img
+                  src="../assets/images/products/orange-t-shirt.png"
+                  alt="Orange T-Shirt"
+                />
+              </a>
+            </div>
+            <div class="arrivalProductDescription">
+              <p>Orange Striped T-shirt</p>
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+              <div class="cost">
+                <h6>$180</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="arrivalCard">
+            <div class="arrivalProduct">
+              <a href="./product-page.html">
+                <img
+                  src="../assets/images/products/blue-tshirt.svg"
+                  alt="Orange T-Shirt"
+                />
+              </a>
+            </div>
+            <div class="arrivalProductDescription">
+              <p>Blue T-shirt</p>
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+              <div class="cost">
+                <h6>$120</h6>
+                <h6 class="second-price">$150</h6>
+                <h6 class="dscount">-30%</h6>
+              </div>
+            </div>
+          </div>
+          <div class="arrivalCard">
+            <div class="arrivalProduct">
+              <a href="./product-page.html">
+                <img
+                  src="../assets/images/products/checkered-shirt.svg"
+                  alt="Graphic T-Shirt"
+                />
+              </a>
+            </div>
+            <div class="arrivalProductDescription">
+              <p>Checkered Shirt</p>
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+              <div class="cost">
+                <h6>$240</h6>
+                <h6 class="second-price">$260</h6>
+                <h6 class="dscount">-20%</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="arrivalCard">
+            <div class="arrivalProduct">
+              <a href="./product-page.html">
+                <img
+                  src="../assets/images/products/green-shirt.png"
+                  alt="Green T-Shirt"
+                />
+              </a>
+            </div>
+            <div class="arrivalProductDescription">
+              <p>Vertical Striped Shirt</p>
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+              <div class="cost">
+                <h6>$180</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="arrivalCard">
+            <div class="arrivalProduct">
+              <a href="./product-page.html">
+                <img
+                  src="../assets/images/products/black-jeans.png"
+                  alt="Black Jeans"
+                />
+              </a>
+            </div>
+            <div class="arrivalProductDescription">
+              <p>Black Jeans</p>
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+              <div class="cost">
+                <h6>$130</h6>
+                <h6 class="second-price">$160</h6>
+                <h6 class="dscount">-30%</h6>
+              </div>
+            </div>
+          </div>
+          <div class="arrivalCard">
+            <div class="arrivalProduct">
+              <a href="./product-page.html">
+                <img
+                  src="../assets/images/products/olive-tshirt1.png"
+                  alt="Graphic T-Shirt"
+                />
+              </a>
+            </div>
+            <div class="arrivalProductDescription">
+              <p>Olive T-shirt</p>
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+              <div class="cost">
+                <h6>$212</h6>
+                <h6 class="second-price">$232</h6>
+                <h6 class="dscount">-20%</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="arrivalCard">
+            <div class="arrivalProduct">
+              <a href="./product-page.html">
+                <img
+                  src="../assets/images/products/black-stripped-tshirt.svg"
+                  alt="Orange T-Shirt"
+                />
+              </a>
+            </div>
+            <div class="arrivalProductDescription">
+              <p>Black Striped T-shirt</p>
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+              <div class="cost">
+                <h6>$145</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="arrivalCard">
+            <div class="arrivalProduct">
+              <a href="./product-page.html">
+                <img
+                  src="../assets/images/products/gardient-shirt.svg"
+                  alt="Black Jeans"
+                />
+              </a>
+            </div>
+            <div class="arrivalProductDescription">
+              <p>Gradient T-shirt</p>
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+              <div class="cost">
+                <h6>$80</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer style="margin-top: 150px">
+      <div class="contact-card">
+        <div class="contact-text">
+          <h1>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1>
+        </div>
+        <form class="contact-form">
+          <div class="input-container">
+            <span class="email-icon"
+              ><img src="../assets/images/icons/email-icon.svg" alt=""
+            /></span>
+            <input type="email" placeholder="Enter Your Email Adress" />
+            <button>Subscribe to Newsletter</button>
+          </div>
+        </form>
+      </div>
+      <div class="footer-content">
+        <div class="shop-co">
+          <h2>SHOP.CO</h2>
+          <p>
+            We have clothes that suits your style and which you're proud to
+            wear. From women to men.
+          </p>
+          <div class="social-icons">
+            <a href=""
+              ><img src="../assets/images/logos/twitter.svg" alt="twitter-icon"
+            /></a>
+            <a href=""
+              ><img
+                src="../assets/images/logos/facebook.svg"
+                alt="facebook-icon"
+            /></a>
+            <a href=""
+              ><img
+                src="../assets/images/logos/instagram.svg"
+                alt="instagram-icon"
+            /></a>
+            <a href=""
+              ><img src="../assets/images/logos/git-hub.svg" alt="git-hub-icon"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer-section company">
+          <h3>COMPANY</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section help">
+          <h3>HELP</h3>
+          <ul>
+            <li><a href="#">Customer Support</a></li>
+            <li><a href="#">Delivery Details</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section faq">
+          <h3>FAQ</h3>
+          <ul>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Manage Deliveries</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Payments</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section resources">
+          <h3>RESOURCES</h3>
+          <ul>
+            <li><a href="#">Free eBooks</a></li>
+            <li><a href="#">Development Tutorial</a></li>
+            <li><a href="#">How to - Blog</a></li>
+            <li><a href="#">Youtube Playlist</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-line"></div>
+
+      <div class="footer-bottom">
+        <p>Shop.co © 2000-2023, All Rights Reserved</p>
+        <div class="payment-icons">
+          <img src="../assets/images/logos/visa.svg" alt="Visa" />
+          <img src="../assets/images/logos/mastercard.svg" alt="Mastercard" />
+          <img src="../assets/images/logos/pay-pal.svg" alt="Paypal" />
+          <img src="../assets/images/logos/apple-pay.svg" alt="Apple Pay" />
+          <img src="../assets/images/logos/google-pay.svg" alt="Google Pay" />
+        </div>
+      </div>
+    </footer>
+    <!-- dropdown js -->
+    <script src="../js/dropdown.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="../js/swipper.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/8805369522.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/filter.js"></script>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

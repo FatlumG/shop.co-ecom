@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOP.CO | E-commerce website</title>
+    <link rel="icon" href="./src/assets/images/icons/favorite-icon.png" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="loader-parent">
+      <div class="loader"></div>
+    </div>
+    <div id="signUp">
+      <div class="signUp-text">
+        <p>Sign up and get 20% off to your first order.</p>
+        <a href="">Sign Up Now</a>
+      </div>
+      <div class="signUp-remove">
+        <button id="removeSignbtn" type="button">&times;</button>
+      </div>
+    </div>
+
+    <!-- HEADER  -->
+    <header class="header">
+      <div class="bars-title">
+        <img
+          id="bars"
+          src="./src/assets/images/icons/bars.svg"
+          alt="Bars Icon"
+        />
+        <h1>Shop.co</h1>
+      </div>
+      <div class="sidebar-nav">
+        <ul class="sidebar-items">
+          <li class="sidebar-item">
+            <i id="xmark" class="fa-solid fa-xmark"></i>
+          </li>
+          <li class="sidebar-item"><a href="#topSelling">Shop</a></li>
+          <li class="sidebar-item"><a href="#brands">Brands</a></li>
+          <li class="sidebar-item"><a href="#newArrivals">New Arrivals</a></li>
+          <li class="sidebar-item"><a href="#topSelling">On Sale</a></li>
+        </ul>
+      </div>
+      <ul class="nav-menu">
+        <li class="dropdown">
+          <button class="dropdown-toggle" type="button">
+            Shop <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">
+              <a href="./src/other-pages/casual.html">Men's Clothing</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="./src/other-pages/casual.html">Women's Clothing</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="./src/other-pages/casual.html">Accessories</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="./src/other-pages/casual.html">Shoes</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#brands">Brands</a></li>
+        <li><a href="#newArrivals">New Arrivals</a></li>
+        <li><a href="#topSelling">On Sale</a></li>
+      </ul>
+      <div class="search-box">
+        <div class="search-bar">
+          <button id="searchBtn" onclick="sendToCasualFromIndex()">
+            <i class="fa-solid fa-magnifying-glass"> </i>
+          </button>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for products..."
+          />
+          <i
+            id="xmarkSearch"
+            class="fa-solid fa-xmark"
+            onclick="deleteContent()"
+          ></i>
+        </div>
+        <div class="result-box"></div>
+      </div>
+      <div class="cart-user-container">
+        <img
+          id="search-icon"
+          src="./src/assets/images/icons/search-icon.svg"
+          alt="Search Icon"
+        />
+        <a href="./src/other-pages/cart.html">
+          <img
+            src="./src/assets/images/icons/shoppingCart.svg"
+            alt="Shopping Cart"
+        /></a>
+        <img src="./src/assets/images/icons/userLogo.svg" alt="User Logo" />
+      </div>
+    </header>
+    <!-- HEADER - END -->
+    <!-- ============================================================================ -->
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="hero-text">
+          <h1 class="hide-left">Find clothes that matches your style</h1>
+          <p class="hide-left">
+            Browse through our diverse range of meticulously crafted garments,
+            designed to bring out your individuality and cater to your sense of
+            style.
+          </p>
+          <button class="hide-left" onclick="sendToCasual()">Shop Now</button>
+          <div class="achievements">
+            <div class="achievement hide-left">
+              <h3>200+</h3>
+              <p>International Brands</p>
+            </div>
+            <div class="achievement hide-left">
+              <h3>2,000+</h3>
+              <p>High-Quality Products</p>
+            </div>
+            <div class="achievement hide-left">
+              <h3>30,000+</h3>
+              <p>Happy Customers</p>
+            </div>
+          </div>
+        </div>
+        <img
+          id="bigStar"
+          class="hide-right"
+          src="./src/assets/images/icons/star.svg"
+          alt="Big Star"
+        />
+        <img
+          id="smallStar"
+          class="hide-right"
+          src="./src/assets/images/icons/starSmall.svg"
+          alt="Small Star"
+        />
+        <img
+          src="./src/assets/images/photos/hero-img.png"
+          class="hero-img hide-right"
+          alt="Hero Image"
+        />
+      </section>
+      <!-- HERO SECTION - END -->
+      <!-- ============================================================================ -->
+      <!-- BRANDS SECTION  -->
+      <section class="brands" id="brands">
+        <div class="brands-img">
+          <img src="./src/assets/images/brands/versace.svg" alt="Versace" />
+          <img src="./src/assets/images/brands/zara.svg" alt="Zara" />
+          <img src="./src/assets/images/brands/gucci.svg" alt="Gucci" />
+          <img src="./src/assets/images/brands/prada.svg" alt="Prada" />
+          <img
+            src="./src/assets/images/brands/calvin-klein.svg"
+            alt="Calvin Klein"
+          />
+
+          <!-- Duplicate the images for seamless looping -->
+          <img src="./src/assets/images/brands/versace.svg" alt="Versace" />
+          <img src="./src/assets/images/brands/zara.svg" alt="Zara" />
+          <img src="./src/assets/images/brands/gucci.svg" alt="Gucci" />
+          <img src="./src/assets/images/brands/prada.svg" alt="Prada" />
+          <img
+            src="./src/assets/images/brands/calvin-klein.svg"
+            alt="Calvin Klein"
+          />
+        </div>
+      </section>
+      <!-- BRANDS SECTION - END -->
+
+      <!-- ============================================================================ -->
+
+      <!-- NEW ARRIVALS SECTION -->
+      <section class="newArrivals" id="newArrivals">
+        <div class="newTittle">
+          <h1>NEW ARRIVALS</h1>
+        </div>
+        <div class="newCards">
+          <div class="arrivalCard hide-left">
+            <div class="arrivalProduct">
+              <a href="./src/other-pages/product-page.html">
+                <img
+                  src="./src/assets/images/products/t-shirt.png"
+                  alt="Black T-shirt"
+                />
+              </a>
+            </div>
+            <div class="arrivalProductDescription">
+              <p>T-SHIRT WITH TAPE DETAILS</p>
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+              <div class="cost">
+                <h6>$120</h6>
+              </div>
+            </div>
+          </div>
+          <div class="arrivalCard hide-left">
+            <div class="arrivalProduct">
+              <a href="./src/other-pages/product-page.html">
+                <img src="./src/assets/images/products/jeans.png" alt="Jeans" />
+              </a>
+            </div>
+            <div class="arrivalProductDescription">
+              <p>SKINNY FIT JEANS</p>
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+              <div class="cost">
+                <h6>$240</h6>
+                <span class="discount">$260</span>
+                <span class="bedge">-20%</span>
+              </div>
+            </div>
+          </div>
+          <div class="arrivalCard hide-left">
+            <div class="arrivalProduct">
+              <a href="./src/other-pages/product-page.html">
+                <img
+                  src="./src/assets/images/products/flanel.png"
+                  alt="Flanel"
+                />
+              </a>
+            </div>
+            <div class="arrivalProductDescription">
+              <p>CHECKERED SHIRT</p>
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+              <div class="cost">
+                <h6>$180</h6>
+              </div>
+            </div>
+          </div>
+          <div class="arrivalCard hide-left">
+            <div class="arrivalProduct">
+              <a href="./src/other-pages/product-page.html">
+                <img
+                  src="./src/assets/images/products/orange-t-shirt.png"
+                  alt="Orange T-shirt"
+              /></a>
+            </div>
+            <div class="arrivalProductDescription">
+              <p>SLEEVE STRIPED T-SHIRT</p>
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+              <div class="cost">
+                <h6>$130</h6>
+                <span class="discount">$160</span>
+                <span class="bedge">-30%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="newButton">
+          <button onclick="sendToCasual()">View All</button>
+        </div>
+      </section>
+      <!-- NEW ARRIVALS SECTION - END -->
+      <!-- ============================================================================ -->
+
+      <!-- Line between new arrivals and top selling sections -->
+      <div class="line"></div>
+
+      <!-- ============================================================================ -->
+      <!-- TOP SELLING SECTION -->
+      <section class="newArrivals" id="topSelling">
+        <div class="newTittle">
+          <h1>TOP SELLING</h1>
+        </div>
+        <div class="newCards">
+          <div class="arrivalCard hide-left">
+            <div class="arrivalProduct">
+              <a href="./src/other-pages/product-page.html">
+                <img
+                  src="./src/assets/images/products/green-shirt.png"
+                  alt="Green Shirt"
+              /></a>
+            </div>
+            <div class="arrivalProductDescription">
+              <p>VERTICAL STRIPED SHIRT</p>
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+              </ul>
+              <div class="cost">
+                <h6>$212</h6>
+                <span class="discount">$232</span>
+                <span class="bedge">-20%</span>
+              </div>
+            </div>
+          </div>
+          <div class="arrivalCard hide-left">
+            <div class="arrivalProduct">
+              <a href="./src/other-pages/product-page.html">
+                <img
+                  src="./src/assets/images/products/graphic-tshirt.png"
+                  alt="Graphic-Tshirt"
+                />
+              </a>
+            </div>
+            <div class="arrivalProductDescription">
+              <p>COURAGE GRAPHIC T-SHIRT</p>
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+              <div class="cost">
+                <h6>$145</h6>
+              </div>
+            </div>
+          </div>
+          <div class="arrivalCard hide-left">
+            <div class="arrivalProduct">
+              <a href="./src/other-pages/product-page.html">
+                <img
+                  src="./src/assets/images/products/shorts.png"
+                  alt="Shorts"
+                />
+              </a>
+            </div>
+            <div class="arrivalProductDescription">
+              <p>LOOSE FIT BERMUDA SHORTS</p>
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+              <div class="cost">
+                <h6>$80</h6>
+              </div>
+            </div>
+          </div>
+          <div class="arrivalCard hide-left">
+            <div class="arrivalProduct">
+              <a href="./src/other-pages/product-page.html">
+                <img
+                  src="./src/assets/images/products/black-jeans.png"
+                  alt="Black Jeans"
+                />
+              </a>
+            </div>
+            <div class="arrivalProductDescription">
+              <p>FADED SKINNY JEANS</p>
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+              <div class="cost">
+                <h6>$210</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="newButton">
+          <button onclick="sendToCasual()">View All</button>
+        </div>
+      </section>
+      <!-- TOP SELLING SECTION - END -->
+      <!-- ======================================================== -->
+      <!-- BROWSE BY DRESS STYLE SECTION -->
+      <section id="dressStyle">
+        <div class="dressBrowse">
+          <h2 class="hide-center">BROWSE BY DRESS STYLE</h2>
+          <div class="browseStyles">
+            <div class="topBrowse hide-center">
+              <div class="casualCard browseCard">
+                <h5>Casual</h5>
+              </div>
+              <div class="formalCard browseCard">
+                <h5>Formal</h5>
+              </div>
+            </div>
+            <div class="bottomBrowse">
+              <div class="partyCard browseCard">
+                <h5>Party</h5>
+              </div>
+              <div class="gymCard browseCard">
+                <h5>Gym</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- BROWSE BY DRESS STYLE SECTION - END-->
+      <!-- ======================================================== -->
+      <!-- SWIPER  -->
+      <section>
+        <div class="swiper">
+          <div class="title">
+            <h1>OUR HAPPY CUSTOMERS</h1>
+          </div>
+          <!-- Arrows -->
+          <div class="arrows">
+            <div class="left">
+              <img
+                src="./src/assets/images/icons/swipe-left.svg"
+                alt="Left Arrow"
+              />
+            </div>
+            <div class="right">
+              <img
+                src="./src/assets/images/icons/swipe-right.svg"
+                alt="Right Arrow"
+              />
+            </div>
+          </div>
+
+          <div class="fixed-blur"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-aos="fade-up">
+              <div class="card-container">
+                <div class="stars">
+                  <ul class="rating-stars">
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                  </ul>
+                </div>
+                <div class="name">
+                  Alex K.
+                  <img
+                    class="swiper-vector"
+                    src="./src/assets/images/icons/swipe-vector.svg"
+                    alt="Swipe Vector"
+                  />
+                </div>
+                <div class="text">
+                  "Finding clothes that align with my personal style used to be
+                  a challenge until I discovered Shop.co. The range of options
+                  they offer is truly remarkable, catering to a variety of
+                  tastes and occasions.”
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <div class="stars">
+                  <ul class="rating-stars">
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                  </ul>
+                </div>
+                <div class="name">
+                  James L.<img
+                    class="swiper-vector"
+                    src="./src/assets/images/icons/swipe-vector.svg"
+                    alt="Swipe Vector"
+                  />
+                </div>
+                <div class="text">
+                  "As someone who's always on the lookout for unique fashion
+                  pieces, I'm thrilled to have stumbled upon Shop.co. The
+                  selection of clothes is not only diverse but also on-point
+                  with the latest trends.”
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <div class="stars">
+                  <ul class="rating-stars">
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                  </ul>
+                </div>
+                <div class="name">
+                  Alex K.
+                  <img
+                    class="swiper-vector"
+                    src="./src/assets/images/icons/swipe-vector.svg"
+                    alt="Swipe Vector"
+                  />
+                </div>
+                <div class="text">
+                  "As someone who's always on the lookout for unique fashion
+                  pieces, I'm thrilled to have stumbled upon Shop.co. The
+                  selection of clothes is not only diverse but also on-point
+                  with the latest trends.”
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <div class="stars">
+                  <ul class="rating-stars">
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                  </ul>
+                </div>
+                <div class="name">
+                  Sarah M.
+                  <img
+                    class="swiper-vector"
+                    src="./src/assets/images/icons/swipe-vector.svg"
+                    alt="Swipe Vector"
+                  />
+                </div>
+                <div class="text">
+                  "As someone who's always on the lookout for unique fashion
+                  pieces, I'm thrilled to have stumbled upon Shop.co. The
+                  selection of clothes is not only diverse but also on-point
+                  with the latest trends.”
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <div class="stars">
+                  <ul class="rating-stars">
+                    <li class="star" rating="1">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star" rating="2">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star" rating="3">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star" rating="4">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star" rating="5">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                  </ul>
+                </div>
+                <div class="name">
+                  James L.
+                  <img
+                    class="swiper-vector"
+                    src="./src/assets/images/icons/swipe-vector.svg"
+                    alt="Swipe Vector"
+                  />
+                </div>
+                <div class="text">
+                  "As someone who's always on the lookout for unique fashion
+                  pieces, I'm thrilled to have stumbled upon Shop.co. The
+                  selection of clothes is not only diverse but also on-point
+                  with the latest trends.”
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <div class="stars">
+                  <ul class="rating-stars">
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li class="star">
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                  </ul>
+                </div>
+                <div class="name">
+                  Sarah M.
+                  <img
+                    class="swiper-vector"
+                    src="./src/assets/images/icons/swipe-vector.svg"
+                    alt="Swipe Vector"
+                  />
+                </div>
+                <div class="text">
+                  "As someone who's always on the lookout for unique fashion
+                  pieces, I'm thrilled to have stumbled upon Shop.co. The
+                  selection of clothes is not only diverse but also on-point
+                  with the latest trends.”
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fixed-blur2"></div>
+        </div>
+      </section>
+      <!-- SWIPER - END  -->
+    </main>
+    <!-- ============================================================================ -->
+    <footer>
+      <div class="contact-card">
+        <div class="contact-text">
+          <h1>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1>
+        </div>
+        <form class="contact-form">
+          <div class="input-container">
+            <span class="email-icon"
+              ><img
+                src="./src/assets/images/icons/email-icon.svg"
+                alt="Email Icon"
+            /></span>
+            <input type="email" placeholder="Enter Your Email Adress" />
+            <button>Subscribe to Newsletter</button>
+          </div>
+        </form>
+      </div>
+      <div class="footer-content">
+        <div class="shop-co">
+          <h2 data-aos="fade-right">SHOP.CO</h2>
+          <p data-aos="fade-right">
+            We have clothes that suits your style and which you're proud to
+            wear. From women to men.
+          </p>
+          <div class="social-icons">
+            <a href="#"
+              ><img
+                src="./src/assets/images/logos/twitter.svg"
+                alt="twitter-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="./src/assets/images/logos/facebook.svg"
+                alt="facebook-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="./src/assets/images/logos/instagram.svg"
+                alt="instagram-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="./src/assets/images/logos/git-hub.svg"
+                alt="git-hub-icon"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer-section company">
+          <h3>COMPANY</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section help">
+          <h3>HELP</h3>
+          <ul>
+            <li><a href="#">Customer Support</a></li>
+            <li><a href="#">Delivery Details</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section faq">
+          <h3>FAQ</h3>
+          <ul>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Manage Deliveries</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Payments</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section resources">
+          <h3>RESOURCES</h3>
+          <ul>
+            <li><a href="#">Free eBooks</a></li>
+            <li><a href="#">Development Tutorial</a></li>
+            <li><a href="#">How to - Blog</a></li>
+            <li><a href="#">Youtube Playlist</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-line"></div>
+
+      <div class="footer-bottom">
+        <p>Shop.co © 2000-2023, All Rights Reserved</p>
+        <div class="payment-icons">
+          <img src="./src/assets/images/logos/visa.svg" alt="Visa" />
+          <img
+            src="./src/assets/images/logos/mastercard.svg"
+            alt="Mastercard"
+          />
+          <img src="./src/assets/images/logos/pay-pal.svg" alt="Paypal" />
+          <img src="./src/assets/images/logos/apple-pay.svg" alt="Apple Pay" />
+          <img
+            src="./src/assets/images/logos/google-pay.svg"
+            alt="Google Pay"
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- dropdown js -->
+    <script src="src/js/dropdown.js"></script>
+
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="./src/js/swipper.js"></script>
+
+    <!-- Icons link  -->
+    <script
+      src="https://kit.fontawesome.com/8805369522.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script js  -->
+    <script src="src/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,848 @@
+/* Responsive Styles */
+
+/* Screens between 1024px and 1350px */
+@media (min-width: 1024px) and (max-width: 1350px) {
+  /* HEADER */
+
+  .header {
+    padding: 0 70px !important;
+    gap: 10px;
+    justify-content: space-around;
+  }
+
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .header .nav-menu {
+    gap: 15px !important;
+  }
+
+  .header .search-box {
+    width: 400px !important;
+  }
+
+  /* HEADER - END*/
+
+  /* ======================================================================= */
+
+  /* HERO */
+  main .hero {
+    height: 540px;
+    padding: 0 70px;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+    line-height: 50px;
+  }
+
+  .hero-text p {
+    width: 90%;
+    margin: 20px 0 30px;
+  }
+
+  .hero-text button {
+    width: 160px;
+  }
+
+  .hero-text .achievements {
+    line-height: 10px;
+  }
+
+  .achievements .achievement {
+    margin: 50px 35px 0 0;
+    white-space: nowrap;
+  }
+
+  .achievements .achievement h3 {
+    font-size: 2.2rem;
+  }
+
+  #bigStar {
+    width: 90px;
+  }
+
+  #smallStar {
+    position: absolute;
+    top: 350px;
+    right: 460px;
+  }
+
+  .hero .hero-img {
+    margin-top: 0;
+    height: 600px !important;
+  }
+  /* HERO - */
+
+  /* ======================================================================= */
+
+  /* NEW ARRIVALS */
+  .newArrivals {
+    height: auto;
+    margin: 50px 0;
+    padding: 0 70px;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .newArrivals .newCards {
+    height: auto;
+    gap: 20px;
+  }
+
+  .newArrivals .newCards .arrivalCard {
+    width: 200px;
+    height: 100%;
+  }
+
+  .newArrivals .newCards .arrivalCard .arrivalProduct {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* NEW ARRIVALS - END */
+
+  /* ======================================================================= */
+
+  /* FOOTER  */
+  footer {
+    padding: 0 60px;
+  }
+
+  .contact-card {
+    padding: 20px 50px;
+  }
+
+  .contact-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-form input,
+  .contact-form button {
+    width: 320px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    transform: translateY(-40px);
+  }
+
+  .footer-content .shop-co {
+    width: 250px;
+  }
+
+  .footer-content .shop-co h2 {
+    font-size: 2rem;
+  }
+
+  .footer-content .shop-co p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .footer-section h3 {
+    font-size: 1rem;
+    letter-spacing: 3px;
+  }
+
+  .footer-section ul li a {
+    font-size: 14px;
+  }
+
+  .payment-icons img {
+    width: 75px;
+  }
+
+  /* FOOTER - END */
+}
+
+/* Screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* HEADER  */
+  .header {
+    padding: 0 50px !important;
+    gap: 10px;
+    justify-content: space-around;
+  }
+
+  .header h1 {
+    font-size: 27px;
+  }
+
+  .header .nav-menu {
+    gap: 15px;
+  }
+
+  .header .search-box {
+    width: 300px;
+  }
+
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .header .nav-menu {
+    gap: 15px !important;
+  }
+
+  .header .search-box {
+    width: 400px !important;
+  }
+
+  .header .search-box {
+    display: none;
+  }
+
+  .cart-user-container #search-icon {
+    display: flex;
+  }
+  /* HEADER - END  */
+
+  /* ======================================================================= */
+
+  /* HERO  */
+  main .hero {
+    height: 1200px;
+    padding: 0 50px;
+    flex-direction: column;
+  }
+
+  .hero .hero-text {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    width: 100%;
+  }
+
+  #bigStar {
+    position: absolute;
+    top: 850px;
+    right: 120px;
+  }
+
+  #smallStar {
+    position: absolute;
+    top: 1020px;
+    left: 140px;
+  }
+
+  .hero .hero-img {
+    margin: 0 auto;
+    width: 600px !important;
+  }
+  /* HERO - END  */
+
+  /* ======================================================================= */
+
+  /* NEW ARRIVALS */
+
+  .newArrivals {
+    width: 100%;
+    height: auto;
+    padding: 70px 50px;
+    margin-bottom: 0px;
+  }
+
+  .newArrivals .newTittle h1 {
+    font-size: 2.2rem;
+  }
+
+  .newArrivals .newCards {
+    height: 100%;
+    width: fit-content;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    color: var(--text-color);
+  }
+
+  .newArrivals .newButton button {
+    width: 100%;
+    height: 52px;
+    border-radius: 30px;
+    border: 2px solid var(--bg-card);
+    background-color: transparent;
+    margin-bottom: 18px;
+    transition: all 0.12s ease;
+  }
+
+  .line {
+    width: calc(100% - 40px);
+    height: 1px;
+    background-color: var(--bg-card);
+    margin-left: 20px;
+  }
+
+  /* NEW ARRIVALS - END  */
+
+  /* ======================================================================= */
+
+  /* FOOTER  */
+  footer {
+    padding: 0 50px;
+  }
+
+  .contact-card {
+    height: 200px;
+    padding: 40px 50px;
+  }
+
+  .contact-text h1 {
+    font-size: 2rem;
+    line-height: 38px;
+  }
+
+  .contact-form input {
+    width: 300px;
+  }
+
+  .contact-form button {
+    width: 300px;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-content .shop-co {
+    width: 100%;
+    grid-column: span 2;
+  }
+
+  .footer-section {
+    grid-column: span 1;
+  }
+
+  .footer-bottom {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .payment-icons img {
+    width: 60px;
+    height: auto;
+    margin: 10px;
+  }
+
+  /* FOOTER - END */
+}
+
+/* Screens between 450px and 767px */
+@media (min-width: 450px) and (max-width: 767px) {
+  /* sign up message */
+  #signUp {
+    width: 100%;
+    padding: 0 10px;
+    font-size: 10px;
+  }
+
+  #signUp .signUp-text {
+    justify-content: start;
+    align-items: center;
+    gap: 3px;
+    margin-left: 0px;
+  }
+
+  .header {
+    padding: 0 40px !important;
+  }
+
+  .bars-title #bars {
+    display: flex;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  .header .nav-menu {
+    display: none;
+  }
+
+  .header .search-box {
+    display: none;
+  }
+
+  .cart-user-container #search-icon {
+    display: flex;
+  }
+  /* HEADER - END */
+
+  /* ======================================================================= */
+
+  /* HERO  */
+  main .hero {
+    height: 1000px;
+    padding: 0 40px;
+    flex-direction: column;
+  }
+
+  .hero .hero-text {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 2rem;
+    line-height: 36px;
+  }
+
+  .hero-text p {
+    width: 100%;
+    line-height: 22px;
+  }
+
+  .hero-text button {
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%) !important;
+    width: 300px;
+  }
+
+  .hero-text .achievements {
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .achievements .achievement {
+    margin: 10px 20px;
+    white-space: nowrap;
+  }
+
+  #bigStar {
+    position: absolute;
+    top: 700px;
+    right: 40px;
+  }
+
+  #smallStar {
+    position: absolute;
+    top: 850px;
+    left: 20px;
+  }
+
+  /* HERO - END */
+
+  /* ======================================================================= */
+
+  /* NEW ARRIVALS */
+  .newArrivals {
+    height: 100vh;
+    padding: 0 20px;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+
+  .newArrivals .newTittle h1 {
+    font-size: 35px;
+  }
+
+  .newArrivals .newCards {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    column-gap: 20px;
+    row-gap: 150px;
+    margin-bottom: 80px;
+  }
+
+  .newArrivals .newCards .arrivalCard {
+    width: 200px;
+    height: 200px;
+  }
+
+  .newArrivals .newCards .arrivalCard .arrivalProduct {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* NEW ARRIVALS - END  */
+
+  /* ======================================================================= */
+
+  /* BROWSE BY DRESS STYLE */
+
+  #dressStyle {
+    width: 100%;
+    height: 100vh;
+    padding: 0 20px;
+    margin-bottom: 80px;
+  }
+
+  #dressStyle .dressBrowse {
+    width: 100%;
+    height: 130vh;
+    padding: 40px;
+  }
+
+  #dressStyle .dressBrowse h2 {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  /* BROWSE BY DRESS STYLE - END */
+  /* ======================================================================= */
+  /* SWIPER */
+  .swiper {
+    margin: 350px auto 200px;
+  }
+
+  .title h1 {
+    font-size: 42px;
+  }
+  /* SWIPER - END  */
+  /* ======================================================================= */
+  /* FOOTER  */
+
+  footer {
+    padding: 0 40px;
+  }
+
+  .contact-card {
+    height: 200px;
+    padding: 10px 20px;
+  }
+
+  .input-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .contact-text h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 30px;
+  }
+
+  .contact-form {
+    width: 50%;
+  }
+
+  .contact-form input {
+    max-width: 100%;
+    height: 45px;
+    padding-left: 50px;
+  }
+
+  .contact-form input::placeholder {
+    font-size: 2vw;
+  }
+
+  .contact-form button {
+    max-width: 100%;
+    height: 45px;
+    font-size: 2.2vw;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-content .shop-co {
+    width: 100%;
+    grid-column: span 2;
+  }
+
+  .footer-section {
+    grid-column: span 1;
+  }
+
+  .footer-bottom {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .payment-icons img {
+    width: 60px;
+    height: auto;
+    margin: 10px;
+  }
+
+  /* FOOTER -END */
+}
+
+/* Screens between 300px and 449px */
+@media (min-width: 300px) and (max-width: 449px) {
+  /* sign up message */
+  #signUp {
+    width: 100%;
+    padding: 0 10px;
+    font-size: 10px;
+  }
+
+  #signUp .signUp-text {
+    justify-content: start;
+    align-items: center;
+    gap: 3px;
+    margin-left: 0px;
+  }
+
+  /* HEADER */
+  .header {
+    padding: 0 20px !important;
+  }
+
+  .bars-title #bars {
+    display: flex;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  .header .nav-menu {
+    display: none;
+  }
+
+  .header .search-box {
+    display: none;
+  }
+
+  .cart-user-container #search-icon {
+    display: flex;
+  }
+  /* HEADER - END */
+
+  /* ======================================================================= */
+
+  /* HERO  */
+
+  main .hero {
+    height: 1000px;
+    padding: 0 20px;
+    flex-direction: column;
+  }
+
+  .hero .hero-text {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 2rem;
+    line-height: 36px;
+  }
+
+  .hero-text p {
+    width: 100%;
+    margin: 30px 0;
+    line-height: 22px;
+  }
+
+  .hero-text button {
+    width: 100%;
+  }
+
+  .hero-text .achievements {
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .achievements .achievement {
+    text-align: center;
+    margin: 10px 20px;
+    white-space: nowrap;
+  }
+
+  #bigStar {
+    position: absolute;
+    top: 770px;
+    right: 20px;
+    width: 80px;
+  }
+
+  #smallStar {
+    position: absolute;
+    top: 920px;
+    left: 30px;
+    width: 50px;
+  }
+
+  /* HERO - END */
+
+  /* ======================================================================= */
+
+  /* NEW ARRIVALS */
+  .newArrivals {
+    height: auto;
+    padding: 30px 20px;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+
+  .newArrivals .newTittle h1 {
+    font-size: 35px;
+  }
+
+  .newArrivals .newCards {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    row-gap: 150px;
+    margin-bottom: 80px;
+  }
+
+  .newArrivals .newCards .arrivalCard {
+    width: 200px;
+    height: 200px;
+  }
+
+  .newArrivals .newCards .arrivalCard .arrivalProduct {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* NEW ARRIVALS - END  */
+  /* ======================================================================= */
+
+  /* BROWSE BY DRESS STYLE */
+
+  #dressStyle {
+    width: 100%;
+    height: 100vh;
+    padding: 0 20px;
+    margin-bottom: 80px;
+  }
+
+  #dressStyle .dressBrowse {
+    width: 100%;
+    height: 100vh;
+    padding: 40px;
+  }
+
+  #dressStyle .dressBrowse h2 {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  #dressStyle .dressBrowse .browseStyles {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #dressStyle .dressBrowse .browseStyles .topBrowse {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+
+  #dressStyle .dressBrowse .browseStyles .bottomBrowse {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #dressStyle .dressBrowse .browseCard {
+    height: 120px;
+  }
+
+  /* BROWSE BY DRESS STYLE - END*/
+  /* ======================================================================= */
+  /* FOOTER  */
+
+  footer {
+    padding: 0 20px;
+  }
+
+  .contact-card {
+    height: 200px;
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .contact-card .contact-text {
+    width: 100%;
+  }
+
+  .input-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .email-icon img {
+    width: 5vw;
+  }
+
+  .contact-text h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 27px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form input {
+    max-width: 100%;
+    height: 35px;
+    padding-left: 40px;
+  }
+
+  .contact-form input::placeholder {
+    font-size: 3vw;
+  }
+
+  .contact-form button {
+    max-width: 100%;
+    height: 35px;
+    font-size: 3vw;
+  }
+
+  .footer-content {
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-content .shop-co {
+    width: 100%;
+    grid-column: span 1;
+  }
+
+  .footer-section {
+    grid-column: span 1;
+  }
+
+  .footer-bottom {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-bottom p {
+    font-size: 14px;
+  }
+
+  .payment-icons {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .payment-icons img {
+    width: 50px;
+    height: auto;
+    margin: 10px;
+  }
+
+  /* FOOTER - END */
+}

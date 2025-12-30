@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/images/icons/favorite-icon.png" />
+    <link rel="stylesheet" href="../css/other-pages/product-page.css" />
+    <link
+      rel="stylesheet"
+      href="../css/other-pages/other-pages-responsive.css"
+    />
+    <title>SHOP.CO | Products</title>
+  </head>
+  <body>
+    <div class="loader-parent">
+      <div class="loader"></div>
+    </div>
+    <div id="signUp">
+      <div class="signUp-text">
+        <p>Sign up and get 20% off to your first order.</p>
+        <a href="">Sign Up Now</a>
+      </div>
+      <div class="signUp-remove">
+        <button id="removeSignbtn" type="button">&times;</button>
+      </div>
+    </div>
+    <!-- HEADER  -->
+    <header class="header hide-center">
+      <div class="bars-title">
+        <img id="bars" src="../assets/images/icons/bars.svg" alt="Bars Icon" />
+        <h1>Shop.co</h1>
+      </div>
+      <div class="sidebar-nav">
+        <ul class="sidebar-items">
+          <li class="sidebar-item">
+            <i id="xmark" class="fa-solid fa-xmark"></i>
+          </li>
+          <li class="sidebar-item"><a href="../../index.html">Shop</a></li>
+          <li class="sidebar-item"><a href="../../index.html">Brands</a></li>
+          <li class="sidebar-item">
+            <a href="../../index.html">New Arrivals</a>
+          </li>
+          <li class="sidebar-item"><a href="../../index.html">On Sale</a></li>
+        </ul>
+      </div>
+      <ul class="nav-menu">
+        <li class="dropdown">
+          <button class="dropdown-toggle" type="button">
+            Shop <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">
+              <a href="./src/other-pages/casual.html">Men's Clothing</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="./src/other-pages/casual.html">Women's Clothing</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="./src/other-pages/casual.html">Accessories</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="./src/other-pages/casual.html">Shoes</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="../../index.html">Brands</a></li>
+        <li><a href="../../index.html">New Arrivals</a></li>
+        <li><a href="../../index.html">On Sale</a></li>
+      </ul>
+      <div class="search-box">
+        <div class="search-bar">
+          <button id="searchBtn" onclick="sendToCasualFromNearPages()">
+            <i class="fa-solid fa-magnifying-glass"> </i>
+          </button>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for products..."
+          />
+        </div>
+        <div class="result-box"></div>
+      </div>
+      <div class="cart-user-container">
+        <img
+          id="search-icon"
+          src="../assets/images/icons/search-icon.svg"
+          alt="Search Icon"
+        />
+        <a href="./cart.html">
+          <img
+            src="../assets/images/icons/shoppingCart.svg"
+            alt="Shopping Cart"
+        /></a>
+        <img src="../assets/images/icons/userLogo.svg" alt="User Logo" />
+      </div>
+    </header>
+    <!-- HEADER - END -->
+    <!-- ============================================================================ -->
+    <main>
+      <!-- PRODUCT SECTION  -->
+      <section class="product hide-center">
+        <div class="product-images">
+          <div class="small-images">
+            <img
+              class="first-img small-img"
+              src="../assets/images/products/olive-tshirt1.png"
+              alt="Olive T-Shirt"
+              onclick="changeImage('../assets/images/products/olive-tshirt1.png', this)"
+            />
+            <img
+              class="small-img"
+              src="../assets/images/products/olive-tshirt2.png"
+              alt="Olive T-Shirt"
+              onclick="changeImage('../assets/images/products/olive-tshirt2.png', this)"
+            />
+            <img
+              src="../assets/images/products/olive-tshirt3.png"
+              class="small-img"
+              alt="Olive T-Shirt"
+              onclick="changeImage('../assets/images/products/olive-tshirt3.png', this)"
+            />
+          </div>
+          <img
+            id="mainImg"
+            src="../assets/images/products/olive-tshirt1.png"
+            alt="Olive T-Shirt"
+          />
+        </div>
+        <div class="product-details">
+          <h2>One life graphic <span>t-shirt</span></h2>
+          <ul class="rating-stars">
+            <li class="star" rating="1"><i class="fa-solid fa-star"></i></li>
+            <li class="star" rating="2"><i class="fa-solid fa-star"></i></li>
+            <li class="star" rating="3"><i class="fa-solid fa-star"></i></li>
+            <li class="star" rating="4"><i class="fa-solid fa-star"></i></li>
+            <li class="star"><i class="fa-solid fa-star"></i></li>
+          </ul>
+          <div class="prices">
+            <span class="newPrice">$260</span>
+            <span class="oldPrice">$300</span>
+            <span class="discount">40%</span>
+          </div>
+          <p>
+            This graphic t-shirt which is perfect for any occasion. Crafted from
+            a soft and breathable fabric, it offers superior comfort and style.
+          </p>
+          <hr />
+
+          <p>Select colors</p>
+
+          <div class="colors">
+            <div class="color-circle brown"></div>
+            <div class="color-circle green"></div>
+            <div class="color-circle blue"></div>
+          </div>
+
+          <hr />
+
+          <p>Choose size</p>
+          <div class="sizes">
+            <span class="size">Small</span>
+            <span class="size">Medium</span>
+            <span class="size">Large</span>
+            <span class="size">X-Large</span>
+          </div>
+
+          <hr />
+          <div class="buy-menu">
+            <div class="quantity">
+              <button class="plusMinus decreaseBtn">-</button>
+              <label class="number countLabel">1</label>
+              <button class="plusMinus increaseBtn">+</button>
+            </div>
+            <button class="addToCartBtn" onclick="sendToCart()">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- PRODUCT SECTION - END -->
+
+      <!-- ================================================================> -->
+
+      <!-- RATINGS & REVIEWS SECTION  -->
+      <section class="reviews">
+        <div class="info-nav">
+          <h4 class="info-nav-pages">Product Details</h4>
+          <h4 class="info-nav-pages">Rating & Reviews</h4>
+          <h4 class="info-nav-pages">FAQs</h4>
+        </div>
+        <div class="review-controls">
+          <h3>All reviews <span>(451)</span></h3>
+          <div class="filters">
+            <img
+              src="../assets/images/icons/filter-icon.svg"
+              alt="Filter Icon"
+            />
+            <div class="dropdown-lastest">
+              Lastest <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+            </div>
+            <button>Write a review</button>
+          </div>
+        </div>
+        <div class="review-cards">
+          <!-- 1ST CARD  -->
+          <div class="card-container">
+            <div class="stars">
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+            </div>
+            <div class="name">
+              Samantha D.
+              <img
+                class="swiper-vector"
+                src="../assets/images/icons/swipe-vector.svg "
+                alt="Checkmark Verified Icon"
+              />
+            </div>
+            <div class="text">
+              "I absolutely love this t-shirt! The design is unique and the
+              fabric feels so comfortable. As a fellow designer, I appreciate
+              the attention to detail. It's become my favorite go-to shirt."
+              <br />
+              <br />
+              Posted on August 14, 2023
+            </div>
+          </div>
+          <!-- 1ST CARD  -->
+          <!-- 2ND CARD  -->
+          <div class="card-container">
+            <div class="stars">
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+            </div>
+            <div class="name">
+              Alex M.
+              <img
+                class="swiper-vector"
+                src="../assets/images/icons/swipe-vector.svg "
+                alt="Checkmark Verified Icon"
+              />
+            </div>
+            <div class="text">
+              "The t-shirt exceeded my expectations! The colors are vibrant and
+              the print quality is top-notch. Being a UI/UX designer myself, I'm
+              quite picky about aesthetics, and this t-shirt definitely gets a
+              thumbs up from me."
+              <br />
+              <br />
+              Posted on August 15, 2023
+            </div>
+          </div>
+          <!-- 2ND CARD  -->
+          <!-- 3RD CARD  -->
+          <div class="card-container">
+            <div class="stars">
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+            </div>
+            <div class="name">
+              Ethan R.
+              <img
+                class="swiper-vector"
+                src="../assets/images/icons/swipe-vector.svg "
+                alt="Checkmark Verified Icon"
+              />
+            </div>
+            <div class="text">
+              "This t-shirt is a must-have for anyone who appreciates good
+              design. The minimalistic yet stylish pattern caught my eye, and
+              the fit is perfect. I can see the designer's touch in every aspect
+              of this shirt."
+              <br />
+              <br />
+              Posted on August 16, 2023
+            </div>
+          </div>
+          <!-- 3RD CARD  -->
+          <!-- 4TH CARD  -->
+          <div class="card-container">
+            <div class="stars">
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-solid fa-star"></i></li>
+                <li class="star"><i class="fa-solid fa-star"></i></li>
+              </ul>
+            </div>
+            <div class="name">
+              Olivia P.
+              <img
+                class="swiper-vector"
+                src="../assets/images/icons/swipe-vector.svg "
+                alt="Checkmark Verified Icon"
+              />
+            </div>
+            <div class="text">
+              "As a UI/UX enthusiast, I value simplicity and functionality. This
+              t-shirt not only represents those principles but also feels great
+              to wear. It's evident that the designer poured their creativity
+              into making this t-shirt stand out."
+              <br />
+              <br />
+              Posted on August 17, 2023
+            </div>
+          </div>
+          <!-- 4TH CARD  -->
+          <!-- 5TH CARD  -->
+          <div class="card-container">
+            <div class="stars">
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+            </div>
+            <div class="name">
+              Liam K.
+              <img
+                class="swiper-vector"
+                src="../assets/images/icons/swipe-vector.svg "
+                alt="Checkmark Verified Icon"
+              />
+            </div>
+            <div class="text">
+              "This t-shirt is a fusion of comfort and creativity. The fabric is
+              soft, and the design speaks volumes about the designer's skill.
+              It's like wearing a piece of art that reflects my passion for both
+              design and fashion."
+              <br />
+              <br />
+              Posted on August 18, 2023
+            </div>
+          </div>
+          <!-- 5TH CARD  -->
+          <!-- 6TH CARD  -->
+          <div class="card-container">
+            <div class="stars">
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+            </div>
+            <div class="name">
+              Ava H.
+              <img
+                class="swiper-vector"
+                src="../assets/images/icons/swipe-vector.svg "
+                alt="Checkmark Verified Icon"
+              />
+            </div>
+            <div class="text">
+              "I'm not just wearing a t-shirt; I'm wearing a piece of design
+              philosophy. The intricate details and thoughtful layout of the
+              design make this shirt a conversation starter."
+              <br />
+              <br />
+              Posted on August 19, 2023
+            </div>
+          </div>
+          <!-- 6TH CARD  -->
+        </div>
+        <button class="load-more-btn">Load More Reviews</button>
+      </section>
+      <!-- RATINGS & REVIEWS SECTION -END -->
+
+      <!-- ================================================================> -->
+
+      <!-- OTHER PRODUCTS SECTION  -->
+      <section class="other-products">
+        <h1>You might also like</h1>
+
+        <div class="loader-products-parent">
+          <div class="loader-products"></div>
+        </div>
+        <!-- ITEM 1 -->
+        <div id="productsContainer" class="products-container">
+          <div class="product-item">
+            <img
+              src="../assets/images/products/blue-tshirt.svg"
+              alt="Blue T-Shirt"
+            />
+            <h4>Polo with Contrast Trims</h4>
+            <ul class="rating-stars">
+              <li class="star">
+                <i class="fa-solid fa-star"></i>
+              </li>
+              <li class="star">
+                <i class="fa-solid fa-star"></i>
+              </li>
+              <li class="star">
+                <i class="fa-solid fa-star"></i>
+              </li>
+              <li class="star">
+                <i class="fa-solid fa-star"></i>
+              </li>
+              <li class="star"><i class="fa-regular fa-star"></i></li>
+            </ul>
+            <div class="price">
+              <span class="newPrice">$212</span>
+              <span class="oldPrice">$242</span>
+              <span class="discount">-20%</span>
+            </div>
+          </div>
+          <!-- ITEM 1 -->
+          <!-- ITEM 2 -->
+          <div class="product-item">
+            <img
+              src="../assets/images/products/gardient-shirt.svg"
+              alt="T-Shirt"
+            />
+            <h4>Gradient Graphic T-shirt</h4>
+            <div class="rates">
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+            </div>
+            <div class="price">
+              <span class="newPrice">$145</span>
+            </div>
+          </div>
+          <!-- ITEM 2 -->
+          <!-- ITEM 3 -->
+          <div class="product-item">
+            <img
+              src="../assets/images/products/polo-w-tripping-dt.svg"
+              alt="Blue T-Shirt"
+            />
+            <h4>Polo with Tipping Details</h4>
+            <div class="rates">
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+            </div>
+            <div class="price">
+              <span class="newPrice">$180</span>
+            </div>
+          </div>
+          <!-- ITEM 3 -->
+          <!-- ITEM 4 -->
+          <div class="product-item">
+            <img
+              src="../assets/images/products/black-stripped-tshirt.svg"
+              alt="Blue T-Shirt"
+            />
+            <h4>Black Striped T-shirt</h4>
+            <div class="rates">
+              <ul class="rating-stars">
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+                <li class="star"><i class="fa-regular fa-star"></i></li>
+              </ul>
+            </div>
+            <div class="price">
+              <span class="newPrice">$120</span>
+              <span class="oldPrice">$150</span>
+              <span class="discount">-20%</span>
+            </div>
+          </div>
+          <!-- ITEM 4 -->
+        </div>
+        <button
+          id="seeOtherBtn"
+          class="load-more-btn"
+          onclick="generateProducts()"
+        >
+          See Other Products
+        </button>
+      </section>
+      <!-- OTHER PRODUCTS SECTION - END -->
+    </main>
+
+    <footer>
+      <div class="contact-card">
+        <div class="contact-text">
+          <h1>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1>
+        </div>
+        <form class="contact-form">
+          <div class="input-container">
+            <span class="email-icon"
+              ><img
+                src="../assets/images/icons/email-icon.svg"
+                alt="Email Icon"
+            /></span>
+            <input type="email" placeholder="Enter Your Email Adress" />
+            <button>Subscribe to Newsletter</button>
+          </div>
+        </form>
+      </div>
+      <div class="footer-content">
+        <div class="shop-co">
+          <h2>SHOP.CO</h2>
+          <p>
+            We have clothes that suits your style and which you're proud to
+            wear. From women to men.
+          </p>
+          <div class="social-icons">
+            <a href=""
+              ><img src="../assets/images/logos/twitter.svg" alt="twitter-icon"
+            /></a>
+            <a href=""
+              ><img
+                src="../assets/images/logos/facebook.svg"
+                alt="facebook-icon"
+            /></a>
+            <a href=""
+              ><img
+                src="../assets/images/logos/instagram.svg"
+                alt="instagram-icon"
+            /></a>
+            <a href=""
+              ><img src="../assets/images/logos/git-hub.svg" alt="git-hub-icon"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer-section company">
+          <h3>COMPANY</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section help">
+          <h3>HELP</h3>
+          <ul>
+            <li><a href="#">Customer Support</a></li>
+            <li><a href="#">Delivery Details</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section faq">
+          <h3>FAQ</h3>
+          <ul>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Manage Deliveries</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Payments</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section resources">
+          <h3>RESOURCES</h3>
+          <ul>
+            <li><a href="#">Free eBooks</a></li>
+            <li><a href="#">Development Tutorial</a></li>
+            <li><a href="#">How to - Blog</a></li>
+            <li><a href="#">Youtube Playlist</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-line"></div>
+
+      <div class="footer-bottom">
+        <p>Shop.co © 2000-2023, All Rights Reserved</p>
+        <div class="payment-icons">
+          <img src="../assets/images/logos/visa.svg" alt="Visa" />
+          <img src="../assets/images/logos/mastercard.svg" alt="Mastercard" />
+          <img src="../assets/images/logos/pay-pal.svg" alt="Paypal" />
+          <img src="../assets/images/logos/apple-pay.svg" alt="Apple Pay" />
+          <img src="../assets/images/logos/google-pay.svg" alt="Google Pay" />
+        </div>
+      </div>
+    </footer>
+    <script src="../js/dropdown.js"></script>
+
+    <script src="../js/product-page.js"></script>
+
+    <script src="../js/filter.js"></script>
+
+    <script src="../js/script.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/8805369522.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
